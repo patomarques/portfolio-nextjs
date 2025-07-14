@@ -13,7 +13,7 @@ function AppBanner() {
 			transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 			className="flex flex-col sm:justify-between items-center sm:flex-row mt-5 md:mt-2"
 		>
-			<div className="w-full md:w-1/3 text-left">
+			<div className="w-full md:w-2/3 text-left">
 				<motion.h1
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -24,7 +24,7 @@ function AppBanner() {
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Pato Marques
+					Dayvson Marques
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
@@ -48,10 +48,11 @@ function AppBanner() {
 					className="flex justify-center sm:block"
 				>
 					<a
-						download="Stoman-Resume.pdf"
-						href="/files/Stoman-Resume.pdf"
+						download="cv-webdev.pdf"
+						href="/files/cv-webdev.pdf"
+						target="_blank"
 						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
-						aria-label="Download Resume"
+						aria-label="Download CV"
 					>
 						<FiArrowDownCircle className="ml-0 sm:ml-1 mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowDownCircle>
 						<span className="text-sm sm:text-lg duration-100">

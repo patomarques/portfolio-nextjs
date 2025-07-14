@@ -45,7 +45,7 @@ function ProjectsGrid() {
                         mb-3
                         "
 				>
-					Search projects by title or filter by category
+					Pesquisar projetos por titulo ou categoria
 				</h3>
 				<div
 					className="
@@ -97,7 +97,7 @@ function ProjectsGrid() {
 							name="name"
 							type="search"
 							required=""
-							placeholder="Search Projects"
+							placeholder="Pesquisar Projetos"
 							aria-label="Name"
 						/>
 					</div>

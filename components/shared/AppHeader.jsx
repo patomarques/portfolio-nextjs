@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiSun, FiMoon, FiX, FiMenu } from "react-icons/fi";
+import { BsCurrencyDollar } from "react-icons/bs";
 import HireMeModal from "../HireMeModal";
 import logoLight from "../../public/images/logo-light.svg";
 import logoDark from "../../public/images/logo-dark.svg";
@@ -114,17 +115,36 @@ function AppHeader() {
         >
           <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
             <Link href="/projects" aria-label="Projects">
-              Projects
+              Projetos
             </Link>
           </div>
           <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
             <Link href="/about" aria-label="About Me">
-              About Me
+              Sobre Mim
             </Link>
+          </div>
+          <div
+            className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+            aria-label="About Me"
+          >
+            <Link href="/about">Educação</Link>
+          </div>
+
+          <div
+            className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+            aria-label="About Me"
+          >
+            <Link href="/skills">Habilidades</Link>
+          </div>
+           <div
+            className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+            aria-label="About Me"
+          >
+            <Link href="/projects">Projetos</Link>
           </div>
           <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
             <Link href="/contact" aria-label="Contact">
-              Contact
+              Contato
             </Link>
           </div>
           <div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
@@ -133,7 +153,7 @@ function AppHeader() {
               className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
               aria-label="Hire Me Button"
             >
-              Orçamentos
+              <BsCurrencyDollar />
             </button>
           </div>
         </div>
@@ -147,14 +167,14 @@ function AppHeader() {
             <Link href="/about">Sobre</Link>
           </div>
 
-		  <div
+          <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
             aria-label="About Me"
           >
             <Link href="/about">Educação</Link>
           </div>
 
-		   <div
+          <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
             aria-label="About Me"
           >
@@ -184,7 +204,7 @@ function AppHeader() {
               className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
               aria-label="Hire Me Button"
             >
-              Orçamentos
+              <BsCurrencyDollar />
             </button>
           </div>
 
